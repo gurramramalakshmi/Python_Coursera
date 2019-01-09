@@ -262,7 +262,10 @@ Solution:
 """
 #%%
 def absolutevalue(num):
-
+    if num <0:
+        print("The absolute value of " ,num ,"is " ,num*-1)
+    else:
+        print("The absolute value of " ,num ,"is " ,num)
 
 
 
@@ -365,7 +368,9 @@ Solution:
 #%%
 
 def inches_to_feet2(inches):
-
+    feet = inches//12  # division by integer with fraction thrown away
+    extra_inches = inches%12
+    print(inches,"inches is",feet,"feet and",extra_inches,"inches")
 
 
 
@@ -403,11 +408,12 @@ Solution:
 """
 #%%
 
-
-
-
-
-
+def count_down():
+    ct=10
+    while ct>0:
+        print(ct,end=" ")
+        ct = ct - 1
+    print ("BLASTOFF!")
 
 
 #%%
@@ -441,7 +447,9 @@ Solution:
 """
 #%%
 def countdown1():
-
+    for ct in range(10,0,-1):
+        print(ct,end=" ")
+    print("BLASTOFF!")
 
 
 
@@ -468,7 +476,9 @@ def favorite():
 My solution:
 """
 
-
+def favorite():
+    my_toy = input("What is my favorite toy? ")
+    print("Your favorite toy is", my_toy)
 
 
 
